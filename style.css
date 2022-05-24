@@ -85,7 +85,7 @@ header .judul {
     border-top: 5px solid red;
     border-bottom: 5px solid lightblue;
     height: 300px;
-    background-position: 50px -10;
+    background-position: 150px 0;
 }
 
 main {
@@ -140,10 +140,6 @@ footer {
         "main aside"
         "footer footer";
     }
-
-    .hero {
-        background-position: 0 -30px;
-    }
 }
 
 @media screen and (min-width: 992px) {
@@ -154,9 +150,5 @@ footer {
         "hero hero"
         "main aside"
         "footer footer";
-    }
-
-    .hero {
-        background-position: 0 -10px;
     }
 }
