@@ -85,7 +85,7 @@ header .judul {
     border-top: 5px solid red;
     border-bottom: 5px solid lightblue;
     height: 300px;
-    background-position: 0 -50px;
+    background-position: 50px -10;
 }
 
 main {
@@ -142,7 +142,7 @@ footer {
     }
 
     .hero {
-        background-position: 0 -90px;
+        background-position: 0 -30px;
     }
 }
 
@@ -157,6 +157,6 @@ footer {
     }
 
     .hero {
-        background-position: 0 -50px;
+        background-position: 0 -10px;
     }
 }
