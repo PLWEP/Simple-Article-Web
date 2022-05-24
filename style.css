@@ -46,20 +46,20 @@ table {
 /* Style */
 body {
     font: 1em/1.7em arial, sans-serif;
-    background-color: aqua;
+    background-color: black;
     color: #333;
     background-image: url(res/mainback.png);
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     grid-template-areas: 
-    "header header"
-    "hero hero"
-    "main main"
-    "aside aside"
-    "footer footer";
-    margin: 80px auto;
+        "header header"
+        "hero hero"
+        "main main"
+        "aside aside"
+        "footer footer";
+    margin: 40px auto;
     background-color: white;
     display: grid;
     gap: 1em;
@@ -133,30 +133,23 @@ footer {
 /* For Tablet */
 @media screen and (min-width: 768px) {
     .container {
-        width: 70%;
+        width: 75%;
         grid-template-areas: 
         "header header"
         "hero hero"
         "main aside"
         "footer footer";
     }
-
-    /* .hero {
-        background-position: 0 -30px;
-    } */
 }
 
+/* For Laptop */
 @media screen and (min-width: 992px) {
     .container {
-        width: 50%;
+        width: 55%;
         grid-template-areas: 
         "header header"
         "hero hero"
         "main aside"
         "footer footer";
     }
-
-    /* .hero {
-        background-position: center;
-    } */
 }
