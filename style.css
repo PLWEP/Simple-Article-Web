@@ -45,7 +45,7 @@ table {
 
 /* Style */
 body {
-    font: 1em/1.7em arial, sans-serif;
+    font: 1.3em/1em arial, sans-serif;
     background-color: black;
     color: #333;
     background-image: url(res/mainback.png);
@@ -59,7 +59,7 @@ body {
         "main main"
         "aside aside"
         "footer footer";
-    margin: 40px auto;
+    margin: 10px auto;
     background-color: white;
     display: grid;
     gap: 1em;
@@ -113,6 +113,15 @@ aside {
     grid-area: aside;
 }
 
+aside .profile {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: columns;
+    gap: 1em;
+}
+
 aside h3 {
     font-weight: bold;
     color: #666;
@@ -120,6 +129,11 @@ aside h3 {
 
 aside p {
     font-size: 0.8em;
+}
+
+aside img {
+    width: 100px;
+    height: 100px;
 }
 
 footer {
@@ -130,26 +144,41 @@ footer {
     color: white;
 }
 
-/* For Tablet */
-@media screen and (min-width: 768px) {
+table {
+    margin: 10px 0;
+    table-layout: auto;
+    width: 100%;
+}
+
+th {
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+td {
+    border-bottom: 1px solid rgba(0,0,0,.6);
+    padding: 20px 5px;
+    text-align: center;
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 992px) {
     .container {
-        width: 75%;
+        width: 900px;
         grid-template-areas: 
         "header header"
         "hero hero"
         "main aside"
         "footer footer";
+    }
+
+    aside .profile {
+        width: 100%;
     }
 }
 
-/* For Laptop */
-@media screen and (min-width: 992px) {
-    .container {
-        width: 55%;
-        grid-template-areas: 
-        "header header"
-        "hero hero"
-        "main aside"
-        "footer footer";
-    }
-}
