@@ -44,7 +44,7 @@ table {
 
 /* Style */
 body {
-    font: 22px/24px arial, sans-serif;
+    font: 22px/24px 'Inconsolata', monospace;
     background-color: black;
     color: #333;
     background-image: url(res/mainback.png);
@@ -101,6 +101,7 @@ header .judul {
 
 .article main {
     grid-area: main;
+    text-align: justify;
 }
 
 .article aside {
@@ -117,11 +118,11 @@ main h2 {
     font-weight: bold;
 }
 
-main p {
+.article main p {
     margin: 10px auto;
 }
 
-aside .profile {
+.article aside .profile {
     width: 40%;
     box-sizing: border-box;
     padding: 5px;
@@ -135,11 +136,11 @@ aside h3 {
     color: #666;
 }
 
-aside p {
+.article aside p {
     font-size: 16px;
 }
 
-aside img {
+.article aside img {
     width: 100px;
     height: 100px;
 }
@@ -152,27 +153,43 @@ footer {
     color: white;
 }
 
-table {
-    margin: 10px 0;
-    table-layout: auto;
-    width: 100%;
-}
-
-th {
-    padding: 5px;
-    background-color: black;
-    color: white;
-}
-
-td {
-    border-bottom: 1px solid rgba(0,0,0,.6);
-    padding: 20px 5px;
+.index main h2 {
     text-align: center;
 }
 
-td a {
+.article-list {
+    box-sizing: border-box;
+    padding: 5px;
+    box-shadow: 
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 10px ;
+}
+
+.article-list a {
     text-decoration: none;
-    color: black;
+    color: #000;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(1fr, auto));
+}
+
+.article-title {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.article-title h3 {
+    font-size: 30px;
+}
+
+.article-subtitle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+}
+
+.article-list .article-subtitle .writer {
+    justify-self: end;
 }
 
 @media screen and (min-width: 992px) {
